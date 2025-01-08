@@ -1,0 +1,66 @@
+# Cursor Boilerplate Rules
+
+This boilerplate serves as the foundation for your projects. Below are the predefined packages, configurations, and rules for working with this setup. Follow these guidelines strictly to ensure compatibility and maintainability.
+
+## Immutable Boilerplate Base
+
+- The predefined setup in this boilerplate (e.g., `package.json`, `vite.config.ts`, `tsconfig.json`) must remain unchanged.
+- You are allowed to extend the boilerplate by adding new features or configurations, but existing ones should not be removed or modified.
+- Exceptions are made for adjustments to settings specific to your project requirements, but these must align with the boilerplate's core principles.
+
+## Standard Compliance
+
+- This project strictly adheres to modern web development standards.
+- **Type Definitions**: TypeScript is mandatory for this project. Ensure all code is strongly typed.
+- **ESLint**: Use the provided ESLint configuration to maintain consistent coding standards. Avoid disabling rules unless absolutely necessary.
+- **Prettier**: Use the predefined Prettier configuration for code formatting.
+- Ensure that all additional code and configurations align with these standards.
+
+## Default Libraries and Tools
+
+The boilerplate includes the following packages and tools by default:
+
+### Core Libraries
+
+- **React**: Latest stable version for building user interfaces.
+- **Vite**: A fast build tool preconfigured for React and TypeScript.
+- **TypeScript + SWC**: For type safety and high-speed compilation.
+
+### State Management
+
+- **Zustand**: A minimalistic state management library designed for simplicity and flexibility.
+
+### UI Components
+
+- **shadcn/ui**: A complete set of customizable UI components for building modern interfaces.
+
+### Do Not Replace or Remove
+
+- These libraries form the foundation of the boilerplate. Do not replace or remove them.
+- You may add complementary libraries or tools, but they must integrate seamlessly with the existing setup.
+
+## Documentation for Extensions
+
+When adding new libraries, tools, or configurations:
+
+- Include concise documentation explaining:
+  - The purpose of the addition.
+  - How it is used in the project.
+  - Any potential issues and their resolutions.
+- Documentation should be added to a dedicated section within the project or a separate markdown file.
+
+## Development Workflow
+
+- Build your projects on top of this boilerplate without altering the foundational setup.
+- Ensure any additional features enhance the existing structure without conflicting with the default configurations.
+- Follow best practices for clean and maintainable code.
+
+## Recommended Practices
+
+- Regularly update dependencies to their latest versions while ensuring compatibility.
+- Test all changes thoroughly in a development environment before pushing to production.
+- Maintain consistency in code style and structure by adhering to provided standards.
+
+---
+
+For any questions or issues related to the boilerplate, refer to the included documentation or reach out to the maintainers.
