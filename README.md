@@ -1,5 +1,9 @@
 # Cursor Boilerplate Rules
 
+Always use "bun" as package manager
+Always speak to me in Turkish and if you are going to write a comment line or define a variable in the codebase always write in English.
+All shadcn/ui components are installed in the project, you do not need to install an additional shadcn/ui component.
+
 This boilerplate serves as the foundation for your projects. Below are the predefined packages, configurations, and rules for working with this setup. Follow these guidelines strictly to ensure compatibility and maintainability.
 
 ## Immutable Boilerplate Base
