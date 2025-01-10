@@ -1,9 +1,5 @@
 # Cursor Boilerplate Rules
 
-Always use "bun" as package manager
-Always speak to me in Turkish and if you are going to write a comment line or define a variable in the codebase always write in English.
-All shadcn/ui components are installed in the project, you do not need to install an additional shadcn/ui component.
-
 This boilerplate serves as the foundation for your projects. Below are the predefined packages, configurations, and rules for working with this setup. Follow these guidelines strictly to ensure compatibility and maintainability.
 
 ## Immutable Boilerplate Base
@@ -47,6 +43,13 @@ The boilerplate includes the following packages and tools by default:
     - A detailed explanation of the purpose of the changes.
     - Specific examples of what you need to add or modify.
     - Obtain approval before making the changes.
+
+### Drag-and-Drop
+
+- **dnd-kit**: The exclusive drag-and-drop library for this project.
+  - **Reason**: `dnd-kit` offers a flexible and modern API for handling drag-and-drop interactions, ensuring consistency and reliability.
+  - Do not use alternative libraries such as `react-beautiful-dnd` or `react-dnd`.
+  - All drag-and-drop implementations should follow best practices as outlined in the `dnd-kit` documentation.
 
 ### Folder Structure
 
@@ -127,6 +130,13 @@ For additional functionality like animations, storage, or data fetching, you mus
 - **Purpose**: Query and manipulate data via GraphQL APIs.
 - **Recommended Package**: [`@apollo/client`](https://www.apollographql.com/docs/react/) for an advanced GraphQL client.
 
+### Drag-and-Drop
+
+- **Purpose**: Enable drag-and-drop functionality in the project.
+- **Recommended Package**: [`@dnd-kit`](https://dndkit.com/) for flexible and extensible drag-and-drop interactions.
+  - **Implementation**: Use `dnd-kit` exclusively for drag-and-drop features. Avoid using other libraries.
+  - Ensure drag-and-drop logic is modular and reusable. Store all related files in `src/components/features/dragdrop` or similar.
+
 For any of these needs, provide a brief explanation of why the library is necessary and how it integrates with the current setup. Ensure it follows the project's coding standards.
 
 ### Restricted Usage
@@ -156,6 +166,18 @@ When adding new libraries, tools, or configurations:
 - Test all changes thoroughly in a development environment before pushing to production.
 - Maintain consistency in code style and structure by adhering to provided standards.
 
----
+## Additional Strict Rules
 
-For any questions or issues related to the boilerplate, refer to the included documentation or reach out to the maintainers.
+- **Package Manager**: Always use `bun` as the package manager. Do not switch to `npm` or `yarn` unless explicitly instructed.
+- **Language and Comments**:
+  - All communication within this project must be in **Turkish**.
+  - All variable names and comment lines in the codebase must be written in **English** to ensure international readability.
+- **UI Components**:
+  - All `shadcn/ui` components are already installed in the project. Avoid adding additional `shadcn/ui` components unless required by the maintainer.
+  - Use `src/components/ui` to organize and work with these components. Ensure proper categorization and naming conventions for easier maintenance.
+- **Styling**:
+  - TailwindCSS is the primary styling library for this project. Do not use additional styling libraries unless absolutely necessary.
+  - Avoid making changes to `index.css` or TailwindCSS configuration files unless:
+    - You provide a clear explanation of the need for these changes.
+    - You list the specific additions or modifications.
+    - You obtain approval for these changes before implementing them.
